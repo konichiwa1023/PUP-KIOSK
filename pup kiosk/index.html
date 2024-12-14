@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP Map Kiosk</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="puplogo.png">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="puplogo.png" style="width: 150px; height: 150px;">
+        <div class="header-tile">
+            <h2>PUP Map Kiosk</h2>
+        </div>
+    </header> 
+
+    <img src="pupmap.gif" usemap="#PUPMap" width="990.5" height="743.75">
+
+    <map name="PUPMap">
+        <area shape="circle" data-modal="#PUPChapel" coords="486.5,588,71.75" alt="PUP Chapel" href="#PUPChapel">
+        <area shape="poly" data-modal="#UnivCanteen" coords="148.75,414.75, 180.25,434, 208.25,390.25, 162.75,360.5, 148.75,379.75, 166.25,390.25" alt="University Canteen - Sampaguita Building" href="#UnivCanteen">
+        <area shape="poly" data-modal="#Lagoon" coords="339.5,378, 374.5,350, 386.75,316.75, 402.5,292.25, 402.5,234.5, 416.5,227.5, 430.5,229.25, 435.75,274.75, 442.75,302.75, 458.5,332.5, 458.5,353.5, 444.5,369.25, 418.25,376.25" alt="Lagoon" href="#Lagoon">
+        <area shape="poly" data-modal="#Gymnasium" coords="806.75,162.75, 652.75,162.75, 652.75,82.25, 805,82.25, 796.25,92.75, 796.25,150.5" alt="Gymnasium and Sports Center" href="#Gymnasium">
+        <area shape="circle" data-modal="#Flagpole" coords="519.75,435.75,21" alt="PUP Flagpole" href="#Flagpole">
+        <area shape="poly" data-modal="#Southwing" coords="197.75,512.75, 248.5,483, 259,500.5, 264.25,497, 320.25,602, 315,607.25, 329,624.75, 274.75,656.25, 264.25,635.25, 259,637, 201.25,532, 206.5,528.5" alt="South Wing" href="#Southwing">
+        <area shape="poly" data-modal="#Northwing" coords="379.75,467.25, 479.5,411.25, 483,418.25, 493.5,413, 504,434, 500.5,437.5, 504,446.25, 500.5,449.75, 505.75,462, 407.75,514.5" alt="North Wing" href="#Northwing">
+        <area shape="poly" data-modal="#Eastwing" coords="332.5,547.75, 388.5,547.75, 388.5,666.75, 376.25,666.75, 376.25,675.5, 357,675.5, 357,670.25, 343,670.25, 343,665, 332.5,665" alt="East Wing" href="#Eastwing">
+        <area shape="poly" data-modal="#Westwing" coords="316.75,514.5, 346.5,467.25, 248.5,404.25, 241.5,416.5, 236.25,413, 229.25,423.5, 225.75,421.75, 213.5,439.25, 222.25,446.25, 218.75,455" alt="West Wing" href="#Westwing">
+        <area shape="poly" data-modal="#Dome" coords="379.75,467.25, 407.75,514.5, 388.5,547.75, 332.5,547.75, 316.75,514.5, 346.5,467.25" alt="PUP Dome" href="#Dome">
+        <area shape="poly" data-modal="#Oval" coords="761.25,399, 803.25,399, 847,428.75, 862.75,467.25, 859.25,509.25, 771.75,635.25, 733.25,658, 684.25,656.25, 642.25,621.25, 628.25,575.75, 638.75,542.5, 724.5,418.25" alt="Track and Football Oval" href="#Oval">
+        <area shape="circle" data-modal="#Obelisk" coords="561.75,327.25,24.5" alt="PUP Obelisk" href="#Obelisk">
+        <area shape="poly" data-modal="#CharlieHall" coords="136.5,252, 250.25,318.5, 231,351.75, 117.25,285.25" alt="Charlie del Rosario Hall" href="#CharlieHall">
+        <area shape="poly" data-modal="#Library" coords="294,85.75, 336,73.5, 357,155.75, 430.5,136.5, 441,175, 365.75,197.75, 388.5,280, 348.25,294, 323.75,203, 204.75,206.5, 302.75,180.25, 318.5,175" alt="Ninoy Aquino Library and Learning Resources Center" href="#Library">
+        <area shape="rect" data-modal="#Pool" coords="525,92.75, 631.75,148.75" alt="Swimming Pool" href="#Pool">
+        <area shape="poly" data-modal="#Press" coords="78.75,120.75, 92.75,120.75, 92.75,80.5, 108.5,80.5, 108.5,70, 120.75,70, 120.75,59.5, 64.75,59.5, 64.75,71.75, 77,71.75" alt="Printing Press Building" href="#Press">
+        <area shape="rect" data-modal="#Tennis" coords="686,187.25, 792.75,280" alt="Tennis Court" href="#Tennis">
+        <area shape="rect" data-modal="#PEBuilding" coords="458.5,68.25, 495.25,208.25" alt="PUP Physical Education Building" href="#PEBuilding">
+        <area shape="poly" data-modal="#Amphitheater" coords="346.5,386.75, 411.25,397.25, 402.5,418.25, 385,427, 358.75,423.5, 346.5,409.5" alt="Amphitheater" href="#Amphitheater">
+        <area shape="poly" data-modal="#Grandstand" coords="670.25,414.75, 689.5,428.75, 631.75,512.75, 612.5,498.75" alt="PUP Grandstand" href="#Grandstand">
+    </map>
+
+    <div class="modal" id="PUPChapel">
+        <div class="modalcontent">
+            <div class="modalheader">
+                PUP Ecumenical Chapel
+            </div>
+            <div class="modalimage">
+                <img src="pupchapel.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The PUP Ecumenical Chapel (known as the Interfaith Chapel) is a nondenominational Christian Church
+                located inside the PUP - A. Mabini Campus. It is situated near the obelisk Flag Pole Hoist Area.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="UnivCanteen">
+        <div class="modalcontent">
+            <div class="modalheader">
+                University Canteen - Sampaguita Building
+            </div>
+            <div class="modalimage">
+                <img src="univcanteen.webp" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                Also known as Sampaguita Canteen. It is located near the West Wing of the PUP A. Mabini Campus - Main Building.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Lagoon">
+        <div class="modalcontent">
+            <div class="modalheader">
+                PUP Lagoon
+            </div>
+            <div class="modalimage">
+                <img src="lagoon.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The PUP Lagoon is the most hung-out place in PUP A. Mabini Campus. It is located between the Main Building and
+                the Ninoy Aquino Library and Learning Resources Center.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Gymnasium">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Gymnasium and Sports Center
+            </div>
+            <div class="modalimage">
+                <img src="gymnasium.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The University Gymnasium and Sports Center serves as the training ground for the student athletes that 
+                participate in the intercollegiate sports program. It is located nearby the Visitor Information Center.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Flagpole">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Flagpole
+            </div>
+            <div class="modalimage">
+                <img src="flagpole.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The PUP A. Mabini Campus Flagpole. It is located in front of the Main Building's North Wing.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Southwing">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Main Building - South Wing
+            </div>
+            <div class="modalimage">
+                <img src="southwing.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The South Wing of the PUP Main Academic Building.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Northwing">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Main Building - North Wing
+            </div>
+            <div class="modalimage">
+                <img src="northwing.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The North Wing of the PUP Main Academic Building.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Eastwing">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Main Building - East Wing
+            </div>
+            <div class="modalimage">
+                <img src="eastwing.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The East Wing of the PUP Main Academic Building.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Westwing">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Main Building - East Wing
+            </div>
+            <div class="modalimage">
+                <img src="westwing.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The West Wing of the PUP Main Academic Building.
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="Dome">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Main Building - Dome
+            </div>
+            <div class="modalimage">
+                <img src="dome.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The Dome at the center of the PUP Main Academic Building.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Oval">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Track and Football Oval
+            </div>
+            <div class="modalimage">
+                <img src="oval.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                A football field that can serve as softball, soccer, and football fields for students.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Obelisk">
+        <div class="modalcontent">
+            <div class="modalheader">
+                PUP Obelisk and Mabini Monument
+            </div>
+            <div class="modalimage">
+                <img src="obelisk.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The Obelisk, standing majestic on its base, depicts the strength of the Polytechnic University of the Philippines 
+                as an institution of higher learning, promoting educational and moral aims which are fortified by a determined leadership 
+                with a clear vision for the Filipino youth and an efficient support system inspired by the virtues of public service.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="CharlieHall">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Charlie del Rosario Hall
+            </div>
+            <div class="modalimage">
+                <img src="charlie.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The Charlie Del Rosario Building is a structure dedicated to the first victim of the Marcos Regime. 
+                An activist and desaparacido, he advocated rights for the oppressed.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Library">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Ninoy Aquino Library and Learning Resources Center
+            </div>
+            <div class="modalimage">
+                <img src="library.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The Ninoy Aquino Library and Learning Resources Center is the library system of the 
+                Polytechnic University of the Philippines composed of libraries providing services to the PUP System.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Pool">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Swimming Pool
+            </div>
+            <div class="modalimage">
+                <img src="pool.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                An olympic-sized swimming pool that is capable of handling several swimming classes and 
+                student athlete activities simultaneously.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Press">
+        <div class="modalcontent">
+            <div class="modalheader">
+                PUP Property Building and Printing Press Building
+            </div>
+            <div class="modalimage">
+                <img src="press.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                Located near the PUP Laboratory High School. No actual image of the buildings found.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Tennis">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Tennis Court
+            </div>
+            <div class="modalimage">
+                <img src="tennis.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                An outdoor area fit for playing tennis. It is situated just past the Visitor Information Center near the
+                Main Gate.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="PEBuilding">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Physical Education Building
+            </div>
+            <div class="modalimage">
+                <img src="pebuilding.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                The Physical Education Building of PUP - A. Mabini Campus, located between the 
+                Swimming Pool and the Ninoy Aquino Library and Learning Resources Center.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Amphitheater">
+        <div class="modalcontent">
+            <div class="modalheader">
+                Amphitheather
+            </div>
+            <div class="modalimage">
+                <img src="amphitheater.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                A place for students to hang out and watch school-based theater events.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Grandstand">
+        <div class="modalcontent">
+            <div class="modalheader">
+                PUP Grandstand
+            </div>
+            <div class="modalimage">
+                <img src="amphitheater.jpg" style="max-height: 50%; max-width: 100%;">
+            </div>
+            <div class="modalbody">
+                A bleacher in PUP - A. Mabini Campus. Located near the Track and Football Oval.
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <footer>
+        &copy; Copyright 2024 Maminta,Carlos Jude G. 
+    </footer>
+
+</body>
+</html>

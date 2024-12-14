@@ -1,0 +1,81 @@
+header {
+    background-color: maroon;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    width: 100%;
+    padding: 20px 0 20px;
+    font-size: 40px;
+}
+
+body {
+    background-image: url("Pylon\ white\ with\ trees.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modal {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    max-width: 30%;
+    max-height: 30%;
+    transform: scale(0);
+}
+
+.modal.active {
+    transform: scale(1);
+}
+
+.modalcontent {
+    background-color: white;
+    border: 5px solid maroon;
+}
+
+.modalheader {
+    background-color: maroon;
+    color: white;
+    font-size: 26px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modalbody {
+    margin: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+#overlay {
+    z-index: 2;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+    transition: 0.2s ease-in-out;
+}
+
+#overlay.active {
+    opacity: 1;
+}
+
+footer {
+    background-color: maroon;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100%;
+    padding: 20px 0 20px;
+}
